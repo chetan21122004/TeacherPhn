@@ -17,7 +17,8 @@ export function ListStudents() {
     setBolen(true)
     try {
       
-      const response = await axios.post("http://localhost:2000/present",{students,lec_id} );
+      const response = await axios.post("https://stu-backend.vercel.app/present",{students,lec_id} );
+      // const response = await axios.post("http://localhost:2000/present",{students,lec_id} );
       console.log(response);
         setBolen(false)
       

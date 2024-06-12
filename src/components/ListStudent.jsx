@@ -26,15 +26,15 @@ export function ListStudents() {
     }
 
   }
-  useEffect(() => {
-    const fetchStudent = async () => {
-      try {
-        const response = await axios.post("https://stu-backend.vercel.app/students/get", { lec_id });
-        setStudents(response.data);
-      } catch (error) {
-        console.error('Error fetching students:', error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchStudent = async () => {
+  //     try {
+  //       const response = await axios.post("https://stu-backend.vercel.app/students/get", { lec_id });
+  //       setStudents(response.data);
+  //     } catch (error) {
+  //       console.error('Error fetching students:', error);
+  //     }
+  //   };
 
     let interval;
     if (gen) {
